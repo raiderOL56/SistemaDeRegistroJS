@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>PÁGINA DE REGISTRO</h1>
+    <form action="" id="formulario">
+        <label for="">Nombre: </label>
+        <input class="margin" type="text" id="nombre" placeholder="Escribe tu nombre..."> <br>
+        <label for="">Edad: </label>
+        <input class="margin" type="number" id="edad" placeholder="Escribe tu edad..."> <br>
+        <label for="">Género: </label> <br>
+        <input type="radio" name="genero">Masculino <br>
+        <input type="radio" name="genero">Femenino <br>
+        <label for="">Dirección: </label>
+        <input class="margin" type="text" id="direccion" placeholder="Escribe tu domicilio..."> <br>
+        <label for="">País: </label>
+        <select class="margin" id="selectPaises" onchange="paisSeleccionado()">
+            <option value="Mexico">México</option>
+            <option value="Colombia">Colombia</option>
+        </select> <br>
+        <label for="">Estados: </label>
+        <select class="margin" id="selectEstados">
+        </select>
+
+        <button type="submit">Registrarse</button>
+        <p class="warnings" id="warnings"></p>
+    </form>
+
+    <!-- JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
