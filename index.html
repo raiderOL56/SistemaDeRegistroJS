@@ -9,19 +9,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>PÁGINA DE REGISTRO</h1>
-    <form action="" id="formulario">
-        <label for="">Nombre: </label>
-        <input class="margin" type="text" id="nombre" placeholder="Escribe tu nombre..."> <br>
-        <label for="">Edad: </label>
-        <input class="margin" type="number" id="edad" placeholder="Escribe tu edad..."> <br>
+    <!-- ADD TASK -->
+  
+    <form id="formulario">
+        <label for="">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" autofocus/> <br>
+
+        <label for="">Edad:</label>
+        <input type="number" id="edad" placeholder="Escribe tu edad"> <br>
+
         <label for="">Género: </label> <br>
         <input type="radio" name="genero">Masculino <br>
         <input type="radio" name="genero">Femenino <br>
+
         <label for="">Dirección: </label>
         <input class="margin" type="text" id="direccion" placeholder="Escribe tu domicilio..."> <br>
+
         <label for="">País: </label>
-        <select class="margin" id="selectPaises" onchange="paisSeleccionado()">
+        <select class="margin" id="selectPaises" onchange="paisSeleccionado()"> 
             <option value="Mexico">México</option>
             <option value="Colombia">Colombia</option>
         </select> <br>
@@ -29,11 +34,12 @@
         <select class="margin" id="selectEstados">
         </select> <br>
 
-        <button type="submit">Registrarse</button>
-        <p class="warnings" id="warnings"></p>
+        <button class="btn btn-primary" id="btn-task-form">Registrar</button>
     </form>
+            
 
     <!-- JS -->
+    <script src="firebase.js" type="module"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

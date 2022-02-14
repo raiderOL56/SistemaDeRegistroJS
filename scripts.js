@@ -1,3 +1,5 @@
+// import {guardarInfo} from './firebase.js';
+
 // Validar qué país está seleccionado
 function paisSeleccionado(){
     var paisSelect = document.getElementById("selectPaises").value;
@@ -30,19 +32,3 @@ function insertarEstados(estado){
     let  option = '<option value="' + estado + '">' + estado + '</option>'
     estadoSelect.insertAdjacentHTML("beforeend", option)
 }
-
-// Validar campos completos
-const nombre = document.getElementById("nombre")
-const edad = document.getElementById("edad")
-const direccion = document.getElementById("direccion")
-const parrafo = document.getElementById("warnings")
-const form = document.getElementById("formulario")
-
-form.addEventListener("submit", e=>{
-    e.preventDefault
-    if(nombre.value.length == 0){
-        alert("Escribe tu nombre")
-    } else if(nombre.value.length  < 6){
-        alert("Nombre inválido")
-    }
-})
