@@ -4,42 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Firebase</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- ADD TASK -->
-  
-    <form id="formulario">
-        <label for="">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Escribe tu nombre" autofocus/> <br>
-
-        <label for="">Edad:</label>
-        <input type="number" id="edad" placeholder="Escribe tu edad"> <br>
-
-        <label for="">Género: </label> <br>
-        <input type="radio" name="genero">Masculino <br>
-        <input type="radio" name="genero">Femenino <br>
-
-        <label for="">Dirección: </label>
-        <input class="margin" type="text" id="direccion" placeholder="Escribe tu domicilio..."> <br>
-
-        <label for="">País: </label>
-        <select class="margin" id="selectPaises" onchange="paisSeleccionado()"> 
-            <option value="Mexico">México</option>
-            <option value="Colombia">Colombia</option>
-        </select> <br>
-        <label for="">Estados: </label>
-        <select class="margin" id="selectEstados">
-        </select> <br>
-
-        <button class="btn btn-primary" id="btn-task-form">Registrar</button>
-    </form>
+    <div class="background">
+        <div class="div_Principal">
+            <div class="div_Sec">
+                <h1>SISTEMA DE REGISTRO</h1>
+                <div class="div_Opc">
+                    <label for="">NOMBRE:</label> <br>
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre" autofocus/> <br>
+                </div>
             
+                <div class="div_Opc">
+                    <label for="">EDAD:</label> <br>
+                    <input type="number" id="edad" placeholder="Escribe tu edad"> <br>
+                </div>
+    
+                <div class="div_Opc ">
+                    <label for="">GÉNERO: </label> <br>
+                    <input type="radio" id="masculino" name="genero">Masculino<br>
+                    <input type="radio" id="femenino" name="genero">Femenino <br>
+                </div>
+            
+                <div class="div_Opc">
+                    <label for="">DIRECCIÓN: </label> <br>
+                    <input class="" type="text" id="direccion" placeholder="Escribe tu domicilio..."> <br>
+                </div>
+            
+                <div class="div_Opc">
+                    <label for="">PAÍS: </label> <br>
+                    <select class="" id="selectPaises"> 
+                        <option value="">Selecciona una opción</option>
+                    </select> <br>
+                </div>
+            
+                <div class="div_Opc">
+                    <label for="">ESTADO: </label> <br>
+                    <select class="" id="selectEstados">
+                        <option value="">Selecciona una opción</option>
+                    </select> <br>
+                </div>
+            
+                <div class="div_Opc">
+                    <label for="">MUNICIPIO: </label> <br>
+                    <select class="" id="selectMunicipios">
+                        <option value="">Selecciona una opción</option>
+                    </select> <br>
+                </div>
+            
+                <button class="div_Opc button" id="insertarBTN">REGISTRARME</button>
+            </div>
+        </div>
+
+    </div>
 
     <!-- JS -->
     <script src="firebase.js" type="module"></script>
-    <script src="scripts.js"></script>
 </body>
 </html>
